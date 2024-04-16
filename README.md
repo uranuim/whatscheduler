@@ -5,3 +5,10 @@ This tool uses pywhatkit python librarie and WhatsApp web service. whatschedular
 
 Very interactive web handle is provided to the user which can be used to schedule messages.
 It uses flask python library to host this web app.
+
+
+Upcoming Features:
+      * Adding option to cancel scheduled message.
+      * Adding page which holds all the scheduled messages.
+      * Adding page that will hold all the delivered messages.
+
