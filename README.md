@@ -1,14 +1,37 @@
-# whatscheduler
+# Whatscheduler
 
-This tool could be used to schedule WhatsApp message at a certain time.
-This tool uses pywhatkit python library and WhatsApp web service. whatschedular is very user friendly tool to schedule WhatsApp message.
+Whatscheduler is a user-friendly tool for scheduling WhatsApp messages using the pywhatkit Python library and WhatsApp Web service. It provides an interactive web interface for scheduling messages and utilizes the Flask Python library for hosting the web app.
 
-Very interactive web handle is provided to the user which can be used to schedule messages.
-It uses flask python library to host this web app.
+## Features
 
+- Schedule WhatsApp messages at a specific time.
+- Interactive web interface for easy scheduling.
+- Uses pywhatkit library for scheduling messages.
+- Hosted using Flask Python library.
 
-Upcoming Features:
-      * Adding option to cancel scheduled message.
-      * Adding page which holds all the scheduled messages.
-      * Adding page that will hold all the delivered messages.
+## Upcoming Features
 
+- Option to cancel scheduled messages.
+- Page to view all scheduled messages.
+- Page to view all delivered messages.
+
+## How to Use
+
+1. Clone this repository.
+2. Install the required dependencies using `pip install -r requirements.txt`.
+3. Run the Flask app using `python app.py`.
+4. Access the web interface in your browser.
+5. Schedule your WhatsApp messages with ease!
+
+## Dependencies
+
+- Flask
+- pywhatkit
+
+## Contributions
+
+Contributions are welcome! If you have any ideas for new features or improvements, feel free to open an issue or submit a pull request.
+
+## License
+
+This project is licensed under the [MIT License](LICENSE).
