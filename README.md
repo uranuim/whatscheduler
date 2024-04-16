@@ -19,7 +19,7 @@ Whatscheduler is a user-friendly tool for scheduling WhatsApp messages using the
 
 1. Clone this repository.
 2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run the Flask app using `python app.py`.
+3. Run the Flask app using `python whatsapp.py`.
 4. Access the web interface in your browser.
 5. Schedule your WhatsApp messages with ease!
 
