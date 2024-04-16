@@ -1,6 +1,6 @@
-# Whatscheduler
+# whatscheduler
 
-Whatscheduler is a user-friendly tool for scheduling WhatsApp messages using the pywhatkit Python library and WhatsApp Web service. It provides an interactive web interface for scheduling messages and utilizes the Flask Python library for hosting the web app.
+whatscheduler is a user-friendly tool for scheduling WhatsApp messages using the pywhatkit Python library and WhatsApp Web service. It provides an interactive web interface for scheduling messages and utilizes the Flask Python library for hosting the web app.
 
 ## Features
 
