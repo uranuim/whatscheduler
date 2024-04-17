@@ -9,6 +9,16 @@ whatscheduler is a user-friendly tool for scheduling WhatsApp messages using the
 - Uses pywhatkit library for scheduling messages.
 - Hosted using Flask Python library.
 
+## Screenshots
+
+![App Screenshot](https://github.com/uranuim/whatscheduler/blob/main/sample/1.jpg)
+<br>
+![App Screenshot](https://github.com/uranuim/whatscheduler/blob/main/sample/2.jpg)
+<br>
+![App Screenshot](https://github.com/uranuim/whatscheduler/blob/main/sample/3.jpg)
+<br>
+
+
 ## Upcoming Features
 
 - Option to cancel scheduled messages.
