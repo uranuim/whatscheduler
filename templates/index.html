@@ -42,6 +42,23 @@
             background-color: #45a049; /* darker green color on hover */
             border-color: #45a049; /* darker green border color on hover */
         }
+        .back-btn {
+            display: block;
+            width: 120px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #4caf50; /* green button background */
+            color: white; /* white text color */
+            text-decoration: none; /* remove underline */
+            border: none; /* remove border */
+            border-radius: 5px; /* rounded corners */
+            cursor: pointer; /* show pointer on hover */
+        }
+
+        .back-btn:hover {
+            background-color: #45a049; /* darker green on hover */
+        }
     </style>
 </head>
 <body>
@@ -66,9 +83,9 @@
             </div>
             <button type="submit" class="btn btn-primary btn-block">Schedule</button>
         </form>
+        <a href="/display" class="back-btn">Scheduled</a>
     </div>
 
-    <!-- Flatpickr JS -->
     <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
     <script>
         flatpickr("#date", {
@@ -84,7 +101,6 @@
         });
     </script>
 
-    <!-- Bootstrap JS (optional, only needed if using Bootstrap's JavaScript) -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
