@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scheduled Messages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e6ffe6; /* light green background */
+            color: #333; /* dark text color */
+            margin: 20px; /* add margin on all sides */
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px; /* set max width for content */
+            margin: 0 auto; /* center content horizontally */
+            padding: 20px; /* add padding inside container */
+            background-color: #fff; /* white background for container */
+            border-radius: 8px; /* rounded corners */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* shadow effect */
+        }
+
+        h1 {
+            color: #4caf50; /* green header text */
+            text-align: center;
+            margin-top: 0; /* remove default margin */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px; /* space above the table */
+        }
+
+        th, td {
+            padding: 12px; /* padding around content */
+            text-align: left;
+            border-bottom: 1px solid #ddd; /* gray border between rows */
+        }
+
+        th {
+            background-color: #4caf50; /* green header background */
+            color: white; /* white text color */
+            font-weight: bold; /* make header text bold */
+        }
+
+        tr:hover {
+            background-color: #f2f2f2; /* light gray background on hover */
+        }
+
+        p {
+            text-align: center;
+            margin-top: 20px; /* space above the paragraph */
+        }
+
+        .back-btn {
+            display: block;
+            width: 120px;
+            margin: 20px auto;
+            padding: 10px;
+            text-align: center;
+            background-color: #4caf50; /* green button background */
+            color: white; /* white text color */
+            text-decoration: none; /* remove underline */
+            border: none; /* remove border */
+            border-radius: 5px; /* rounded corners */
+            cursor: pointer; /* show pointer on hover */
+        }
+
+        .back-btn:hover {
+            background-color: #45a049; /* darker green on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Scheduled Messages</h1>
+        {% if messages %}
+            <table>
+                <thead>
+                    <tr>
+                        <th>Phone Number</th>
+                        <th>Message</th>
+                        <th>Time</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for message in messages %}
+                    <tr>
+                        <td>{{ message.phone_number }}</td>
+                        <td>{{ message.message }}</td>
+                        <td>{{ message.time }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No scheduled messages found.</p>
+        {% endif %}
+        <a href="/" class="back-btn">Back to Index</a>
+    </div>
+</body>
+</html>
